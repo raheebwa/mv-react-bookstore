@@ -15,7 +15,7 @@ const BooksList = ({ books }) => (
     <tbody>
       <tr>
         <td>
-          {books.map((book) => (
+          {books.map(book => (
             <Book book={book} key={book.id} />
           ))}
         </td>
@@ -28,6 +28,6 @@ BooksList.propTypes = {
   books: PropTypes.instanceOf(Array).isRequired,
 };
 
-const mapStateToProps = (state) => ({ books: state.books });
+const mapStateToProps = state => ({ books: state.books });
 
 export default connect(mapStateToProps)(BooksList);

@@ -1,14 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+import BooksList from './components/BooksList';
+import BooksForm from './components/BooksForm';
 import './App.css';
 
-const App = () => {
-  return (
-    <div className="App">
-      <BooksList></BooksList>
-      <BooksForm></BooksForm>
-    </div>
-  );
-}
+const App = () => (
+  <div className="App">
+    <BooksList />
+    <BooksForm />
+  </div>
+);
 
 export default App;

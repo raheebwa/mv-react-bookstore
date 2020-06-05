@@ -13,7 +13,7 @@ To Design a Bookstore App in react
 
 ### Live Demo
 
-The live demo is [dami-ramar](https://dami-ramar.herokuapp.com/)
+The live demo is [damie-ramar](https://damie-ramar.herokuapp.com/)
 
 ### Project Highlights & Emphasis
 

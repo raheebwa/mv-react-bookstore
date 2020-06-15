@@ -48,11 +48,11 @@ class BooksForm extends React.Component {
   }
 
   reset() {
-    this.setState = {
-      id: Math.floor(Math.random()),
+    this.setState = ({
+      id: Math.floor(Math.random() * 100),
       title: '',
       category: categories[0],
-    };
+    });
   }
 
   render() {

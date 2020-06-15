@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Books = ({ book, removeBook }) => (
-  <tr>
+const Book = ({ book, removeBook }) => (
+  <tr key={book.id}>
     <td>{book.id}</td>
     <td>{book.title}</td>
     <td>{book.category}</td>
@@ -14,7 +14,7 @@ const Books = ({ book, removeBook }) => (
   </tr>
 );
 
-Books.propTypes = {
+Book.propTypes = {
   book: PropTypes.shape({
     id: PropTypes.number,
     title: PropTypes.string,
@@ -23,4 +23,4 @@ Books.propTypes = {
   removeBook: PropTypes.func.isRequired,
 };
 
-export default Books;
+export default Book;

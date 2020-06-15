@@ -14,13 +14,9 @@ const BooksList = ({ books, removeBook }) => (
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>
-          {books.map(book => (
-            <Book book={book} key={book.id} removeBook={removeBook} />
-          ))}
-        </td>
-      </tr>
+      {books.map(book => (
+        <Book book={book} key={book.id} removeBook={removeBook} />
+      ))}
     </tbody>
   </table>
 );

@@ -17,7 +17,7 @@ class BooksForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      id: Math.floor(Math.random()),
+      id: Math.floor(Math.random() * 100),
       title: '',
       category: categories[0],
     };
@@ -77,18 +77,14 @@ BooksForm.propTypes = {
   createBook: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = state => {
-  return {
-    books: state.books,
-  };
-};
+const mapStateToProps = state => ({
+  books: state.books,
+});
 
-const mapDispatchToProps = dispatch => {
-  return {
-    createBook: book => {
-      dispatch(createBook(book));
-    },
-  };
-};
+const mapDispatchToProps = dispatch => ({
+  createBook: book => {
+    dispatch(createBook(book));
+  },
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(BooksForm);

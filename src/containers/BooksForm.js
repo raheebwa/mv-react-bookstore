@@ -48,8 +48,8 @@ class BooksForm extends React.Component {
   }
 
   reset() {
-    this.setState = ({
-      id: Math.floor(Math.random() * 100),
+    this.setState({
+      id: Math.ceil(Math.random() * 100),
       title: '',
       category: categories[0],
     });

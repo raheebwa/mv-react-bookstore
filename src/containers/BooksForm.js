@@ -17,6 +17,7 @@ class BooksForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      id: Math.floor(Math.random()),
       title: '',
       category: categories[0],
     };
@@ -49,7 +50,7 @@ class BooksForm extends React.Component {
   render() {
     const { title, category } = this.state;
     return (
-      <form>
+      <form onSubmit={this.handleSubmit}>
         <h2>Title</h2>
         <input name="title" type="text" value={title} onChange={this.handleChange} />
         <h2>Category</h2>
@@ -68,7 +69,7 @@ BooksForm.propTypes = {
   createBook: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     books: state.books,
   };
@@ -78,8 +79,8 @@ const mapDispatchToProps = dispatch => {
   return {
     createBook: book => {
       dispatch(createBook(book));
-    };
+    },
   };
 };
 
-export default BooksForm;
+export default connect(mapStateToProps, mapDispatchToProps)(BooksForm);

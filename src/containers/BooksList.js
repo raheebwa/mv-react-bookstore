@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Book from '../components/Book';
+import { removeBook } from '../actions/index';
 
-const BooksList = ({ books }) => (
+const BooksList = ({ books, removeBook }) => (
   <table>
     <thead>
       <tr>
@@ -16,7 +17,7 @@ const BooksList = ({ books }) => (
       <tr>
         <td>
           {books.map(book => (
-            <Book book={book} key={book.id} />
+            <Book book={book} key={book.id} removeBook={removeBook} />
           ))}
         </td>
       </tr>

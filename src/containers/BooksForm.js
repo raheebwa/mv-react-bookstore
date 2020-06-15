@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux'; 
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
 
@@ -45,6 +45,14 @@ class BooksForm extends React.Component {
       createBook(this.state);
       this.reset();
     }
+  }
+
+  reset() {
+    this.setState = {
+      id: Math.floor(Math.random()),
+      title: '',
+      category: categories[0],
+    };
   }
 
   render() {

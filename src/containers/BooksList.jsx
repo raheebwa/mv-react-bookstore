@@ -41,6 +41,7 @@ BooksList.propTypes = {
 
 const mapStateToProps = state => ({
   books: state.books,
+  filter: state.filter,
 });
 
 const mapDispatchToProps = dispatch => ({

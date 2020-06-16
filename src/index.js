@@ -4,7 +4,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import App from './components/App';
-import rootReducer from './reducers/books';
+import rootReducer from './reducers/index';
 
 const initialState = {
   books: [

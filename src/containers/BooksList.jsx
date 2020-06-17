@@ -14,20 +14,11 @@ const BooksList = ({
       <div>
         <CategoryFilter changeFilter={changeFilter} />
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filterBooks.map(book => (
-            <Book book={book} key={book.id} removeBook={removeBook} />
-          ))}
-        </tbody>
-      </table>
+      <div className="booklist">
+        {filterBooks.map((book) => (
+          <Book book={book} key={book.id} removeBook={removeBook} />
+        ))}
+      </div>
     </div>
   );
 };

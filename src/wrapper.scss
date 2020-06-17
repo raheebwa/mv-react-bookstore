@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@300;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*::before,
+*,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  width: 1600px;
+  background-color: #f5f6fa;
+}
+
+select,
+input {
+  border: none;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: 37px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+label,
+option,
+input {
+  font-family: 'Roboto Slab', serif;
+}
+
+label {
+  font-weight: 300;
+}

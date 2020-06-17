@@ -6,29 +6,29 @@
   justify-content: space-between;
   align-items: center;
 
-  .brand{
-        display: flex;
+  .brand {
+    display: flex;
     align-items: center;
     margin-left: 100px;
-  color: rgb(2, 144, 255);
+    color: rgb(2, 144, 255);
   }
 
-  .nav{
+  .nav {
     display: flex;
     margin-right: 100px;
+
     &:hover {
       cursor: not-allowed;
     }
 
     .nav-link {
-        font-family: Montserrat, sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 0.7rem;
-    letter-spacing: 1px;
-    margin-left: 87px;
-    color: #b5b5b5;
-
+      font-family: Montserrat, sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      margin-left: 87px;
+      color: #b5b5b5;
     }
   }
 }

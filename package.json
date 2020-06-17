@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/ --fix",
-    "lint-style": "npx stylelint \"**/*.css\""
+    "lint-style": "npx stylelint \"**/*.scss\""
   },
   "eslintConfig": {
     "extends": "react-app"

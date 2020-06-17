@@ -40,3 +40,15 @@ input {
 label {
   font-weight: 300;
 }
+
+.wrapper {
+  position: absolute;
+  border-radius: 4px;
+  background-color: #fafafa;
+  width: 1400px;
+  left: 100px;
+  top: 149px;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
+  padding-bottom: 265px;
+  margin-bottom: 188px;
+}

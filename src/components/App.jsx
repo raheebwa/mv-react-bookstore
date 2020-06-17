@@ -5,7 +5,7 @@ import '../wrapper.scss';
 import './app.scss';
 
 const App = () => (
-  <div className="App">
+  <div className="wrapper">
     <div className="panel-bg">
       <h1 className="brand">Bookstore CMS</h1>
       <nav className="nav">

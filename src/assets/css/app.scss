@@ -1,3 +1,9 @@
+.wrapper {
+  margin-top: -15%;
+  margin-bottom: -30px;
+  padding-bottom: 30px;
+  overflow-x: hidden;
+}
 .panel-bg {
   display: flex;
   background: #fff;
@@ -22,7 +28,7 @@
       display: block;
       text-align: center;
       align-items: center;
-      margin: 0 auto;
+      margin: 20px 0px;
       padding-bottom: 30px 20px;
     }
   }
@@ -34,6 +40,7 @@
     @media screen and (max-width: 768px) {
       text-align: center;
       align-items: center;
+      margin-right: -20px;
     }
 
     &:hover {
@@ -46,7 +53,7 @@
       font-weight: 400;
       font-size: 0.7rem;
       letter-spacing: 1px;
-      margin-left: 87px;
+      margin-left: 57px;
       color: #b5b5b5;
     }
   }

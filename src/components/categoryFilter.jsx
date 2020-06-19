@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './filter.scss';
+import '../assets/css/filter.scss';
 
 const categories = [
   'All',
@@ -24,7 +24,7 @@ const CategoryFilter = ({ changeFilter }) => {
         ref={select}
         onChange={() => changeFilter(select.current.value)}
       >
-        {categories.map((category) => (
+        {categories.map(category => (
           <option key={category}>{category}</option>
         ))}
       </select>

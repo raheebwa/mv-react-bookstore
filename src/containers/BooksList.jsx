@@ -15,7 +15,7 @@ const BooksList = ({
         <CategoryFilter changeFilter={changeFilter} />
       </div>
       <div className="booklist">
-        {filterBooks.map((book) => (
+        {filterBooks.map(book => (
           <Book book={book} key={book.id} removeBook={removeBook} />
         ))}
       </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook } from '../actions/index';
-import './books.scss';
+import '../assets/css/books.scss';
 
 const categories = [
   'Action',

@@ -15,12 +15,12 @@
   background-color: #fff;
   border: 1px solid #e8e8e8;
   display: flex;
-  padding-top: 32px;
-   @media screen and (max-width:768px) {
-      display: block;
-      height: 25%; 
-      text-align: center; 
-      }
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    height: 25%;
+    text-align: center;
+  }
 }
 
 .book-details {
@@ -104,13 +104,13 @@
   position: absolute;
   left: 869px;
   top: 33px;
-  @media screen and (max-width:768px) {
-      position: relative;
-      left: 0;
-      right: 0;
-      padding-bottom: 30px;
-  
-      }
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    left: 0;
+    right: 0;
+    padding-bottom: 30px;
+  }
 
   h3,
   div {
@@ -158,13 +158,13 @@
   left: 559px;
   top: 48px;
   height: 70px;
-   @media screen and (max-width:768px) {
-      position: relative;
-      display: none;
-      left: 0;
-      right: 0;
-  
-      }
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    display: none;
+    left: 0;
+    right: 0;
+  }
 
   .ring {
     width: 68px;

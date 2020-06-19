@@ -1,10 +1,18 @@
 import React from 'react';
 import BooksList from '../containers/BooksList';
 import BooksForm from '../containers/BooksForm';
-import '../App.css';
+import '../wrapper.scss';
+import '../assets/css/app.scss';
 
 const App = () => (
-  <div className="App">
+  <div className="wrapper">
+    <div className="panel-bg">
+      <h1 className="brand">Bookstore CMS</h1>
+      <nav className="nav">
+        <div className="nav-link">BOOKS</div>
+        <div className="nav-link">CATEGORIES</div>
+      </nav>
+    </div>
     <BooksList />
     <BooksForm />
   </div>

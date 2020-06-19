@@ -1,0 +1,200 @@
+
+.book {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  position: relative;
+  width: 95%;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    height: 25%;
+    text-align: center;
+  }
+}
+
+.book-details {
+  margin-left: 27px;
+
+  h3 {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color: #121212;
+    font-size: 14px;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin-bottom: 4px; // margin collapse
+  }
+
+  h2 {
+    margin-top: 4px;
+    margin-bottom: 0; // margin collapse
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -0.2px;
+  }
+
+  .book-author {
+    margin-top: 0;
+    text-transform: capitalize;
+    color: #4386bf;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .book-actions {
+    margin-top: 18px;
+    display: flex;
+
+    button {
+      background-color: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      height: 24px;
+      padding-right: 15px;
+      border-right: 1px solid #e8e8e8;
+      margin-left: 5%;
+      font-family: 'Roboto Slab', serif;
+      font-size: 14px;
+      font-weight: 300;
+      color: #4386bf;
+
+      &:first-child {
+        margin-left: 0;
+        opacity: 0.7;
+      }
+
+      &:last-child {
+        border-right: none;
+        padding-right: 0;
+        opacity: 0.7;
+
+        &:hover {
+          cursor: not-allowed;
+        }
+      }
+
+      &:nth-child(2):hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      &:first-child:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.book-current-state {
+  position: absolute;
+  left: 869px;
+  top: 33px;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    left: 0;
+    right: 0;
+    padding-bottom: 30px;
+  }
+
+  h3,
+  div {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #121212;
+  }
+
+  h3 {
+    font-size: 13px;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+  }
+
+  div {
+    font-size: 16px;
+    letter-spacing: -0.4px;
+  }
+
+  button {
+    margin-top: 23px;
+    background-color: #0290ff;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 7px 19px 8px 22px;
+    border: none;
+    opacity: 0.7;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+}
+
+.book-progress {
+  display: flex;
+  position: absolute;
+  left: 559px;
+  top: 48px;
+  height: 70px;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    display: none;
+    left: 0;
+    right: 0;
+  }
+
+  .ring {
+    width: 68px;
+    height: 68px;
+    border: 5px solid #379cf6;
+    transform: rotate(45deg);
+    border-left: 5px solid #e8e8e8;
+    position: relative;
+    border-radius: 50%;
+  }
+
+  .progress-ring {
+    margin-left: 21px;
+    padding-right: 79px;
+    border-right: 1px solid #e8e8e8;
+
+    div {
+      color: #121212;
+      font-family: Montserrat, sans-serif;
+
+      &:first-child {
+        font-size: 32px;
+        margin-bottom: 1px;
+      }
+
+      &:last-child {
+        margin-top: 1px;
+        font-size: 14px;
+        opacity: 0.5;
+      }
+    }
+  }
+}

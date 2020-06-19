@@ -1,6 +1,5 @@
 .form-container {
-  border-top: 2px solid #e8e8e8;
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 29px;
 
@@ -9,32 +8,42 @@
     text-transform: uppercase;
     letter-spacing: -0.18px;
     color: #888;
-    margin-bottom: 19px;
+    margin: 0 30px;
     font-family: Montserrat, sans-serif;
     font-weight: 700;
+    @media screen and (max-width:768px) {
+       margin: 0 10px;  
+       padding: 10px;    
+      }
+    
   }
 
   form {
     display: flex;
-
-    .title {
-      width: 664px;
-      margin-right: 34px;
-    }
-
-    .category {
-      width: 285px;
-      background-color: #fff !important;
-    }
+    padding: 20px 30px;
+     @media screen and (max-width:768px) {
+      display: block;
+      padding: 20px 10px;
+      
+      }
 
     #title {
       width: 664px;
       margin-right: 34px;
+      @media screen and (max-width:768px) {
+       width: 90%;
+       margin-bottom: 10px;    
+      }
     }
 
     #category {
       width: 285px;
       background-color: #fff !important;
+       @media screen and (max-width:768px) {
+       width: 90%;  
+       margin-bottom: 10px;    
+  
+      }
     }
 
     .form-input {
@@ -46,12 +55,14 @@
       color: #121212;
       font-family: Montserrat, sans-serif;
       border: 1px solid #e8e8e8;
+       @media screen and (max-width:768px) {
+      }
     }
 
     button {
       width: 184px;
       height: 45px;
-      margin-left: 34px;
+      // margin-left: 34px;
       background-color: #0290ff;
       border-radius: 3px;
       text-transform: uppercase;
@@ -64,6 +75,11 @@
       padding: 12.8px 23px 14.2px 25px;
       border: none;
       opacity: 0.9;
+      @media screen and (max-width:768px) {
+       width: 85%;  
+       margin-bottom: 10px;  
+  
+      }
 
       &:hover {
         opacity: 1;

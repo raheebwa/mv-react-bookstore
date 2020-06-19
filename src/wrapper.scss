@@ -47,8 +47,13 @@ label {
   background-color: #fafafa;
   width: 90%;
   left: 5%;
-  top: 149px;
+  top: 200px;
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   padding-bottom: 265px;
   margin-bottom: 188px;
+  @media screen and (max-width:768px) {
+    width: 95%;
+    left: 2.5%;
+    top: 50px;
+  }
 }

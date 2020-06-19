@@ -5,12 +5,20 @@
   height: 95px;
   justify-content: space-between;
   align-items: center;
+  @media screen and (max-width:768px) {
+   display: block;
+  }
 
   .brand {
     display: flex;
     align-items: center;
     margin-left: 100px;
     color: rgb(2, 144, 255);
+    @media screen and (max-width:768px) {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-bottom: 20px;
+  }
   }
 
   .nav {
